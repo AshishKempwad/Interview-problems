@@ -73,6 +73,7 @@ int smallesteSubstr_maxDistictChar(string str)
   return min_len;
 }
 
+
 /* Driver program to test above function */
 int main() 
 { 
