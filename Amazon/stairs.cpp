@@ -8,9 +8,12 @@ int find_no_of_stairs(int n){
 	arr[0]=0;
 	arr[1]=1;
 	arr[2]=2;
+	int count=2;
 	for(int i=3;i<=n;i++){
-		if(i%2 !=0)
-			arr[i]=1+arr[i-2];
+		if(i%2 !=0){
+			arr[i]=1+arr[i-count];
+			count++;
+		}
 		else
 			arr[i]=1+arr[i-1];
 	}
