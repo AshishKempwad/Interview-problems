@@ -13,7 +13,7 @@ int prec(char a){
 		return -1;
 }
 
-string convertInfixToPrefix(string s){
+string convertInfixToPostfix(string s){
 	stack <char> st;
 	string res;
 	for(int i=0;i<s.length();i++){
@@ -58,7 +58,7 @@ int main(){
 	string s;
 	cin>>s;
 
-	string res=convertInfixToPrefix(s);
+	string res=convertInfixToPostfix(s);
 	cout<<res<<endl;
 
 	return 0;
