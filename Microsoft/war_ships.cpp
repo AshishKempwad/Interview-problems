@@ -31,7 +31,7 @@ int find(int L,int m){
 
 	while(!q.empty()){
 		p=q.front();
-		q.push();
+		q.pop();
 
 		count = (count+1)%m;
 		if(p.second+1 < L){
